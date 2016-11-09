@@ -11,8 +11,6 @@
   <% end %>
 </section>
 </div>
-
-
 1000.times do
   User.create(email: "#{Faker::StarWars.character.tr(" ","")}@wars.com", first_name: "#{Faker::StarWars.character.split.first}").chirps.create(body: "#{Faker::StarWars.quote}")
 end
